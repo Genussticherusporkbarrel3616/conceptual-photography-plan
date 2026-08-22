@@ -1,0 +1,4 @@
+interface:
+  display_name: "概念摄影计划"
+  short_description: "从元素或素材图生成一眼可懂、物理可信的原创概念摄影"
+  default_prompt: "使用 $conceptual-photography-plan，根据我指定的元素或素材图片，生成机制不同、一眼可懂且物理可信的3:4原创概念摄影方案。"
