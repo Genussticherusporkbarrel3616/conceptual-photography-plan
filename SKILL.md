@@ -1,6 +1,6 @@
 ---
 name: conceptual-photography-plan
-description: Create, screen, and validate original conceptual photography and generate corresponding images by default, using a specified element or source image. For reference images, first try to extract a structurally complete, functionally explicit object anchor; fall back to a pure style reference only when extraction fails, and distinguish scene bases from edit targets. Emphasizes new relationships, instant readability, real materials, load-bearing and action closure, and photorealistic 3:4 output. Use for requests such as “create two concepts from this element,” “try this image,” or “continue with the next one”; for analyzing references without imitation, batch ideation, generating or precisely editing conceptual photographs; and for reviewing connections, liquid paths, lighting, scale, and action causality.
+description: Create, screen, and validate original conceptual photography from a specified element, theme, or source image. Use for generating distinct concepts, analyzing references without imitation, routing source images as object anchors, scene bases, edit targets, or style references, and auditing physical logic, visual readability, and originality. Generate corresponding images when the host provides an image-generation capability; otherwise deliver production-ready prompts without claiming an image was created.
 ---
 
 # Conceptual Photography Plan
@@ -15,11 +15,20 @@ Create conceptual photography that can be explained in one sentence, remains und
 - Use photorealistic photographic language. Favor real-life settings and natural light for action-based concepts; favor clean studio photography or a credible everyday environment for wearable concepts.
 - Keep only one anomalous relationship in each image. Do not add explanatory text, arrows, labels, magical light effects, or a second metaphor.
 - Any person shown must be clearly adult, naturally attractive, and non-sexualized. The person supports the concept and must not overpower the subject.
-- By default, every invocation delivers both a screened concept description and its corresponding generated image. Do not require the user to separately ask to “generate” or “create the image.”
-- By default, expand candidates, apply the hard-gate review, and verify the physical logic before reading and using the imagegen skill to generate each image. Invoke imagegen separately for each distinct concept; never substitute a collage for multiple images.
+- By default, every invocation delivers a screened concept description and, when the host has an image-generation capability, its corresponding generated image. Do not require a separate request to generate the image.
+- Before promising image output, inspect the capabilities actually available in the host. Use an available image-generation or image-editing tool and follow its own instructions. Do not assume a tool name, connector, plugin, model, or API exists.
+- Generate each distinct concept separately; never substitute a collage for multiple images. If no image-generation capability is available, deliver a production-ready prompt for each concept, state briefly that no image was generated in the current host, and do not fabricate a tool call or result.
 - When the user specifies one element and asks for concepts without giving a quantity, deliver two genuinely different concepts and two corresponding images. When the user specifies a quantity, deliver that number of concepts and images.
 - Stop at the written-concept stage only when the user explicitly says “concepts only,” “do not generate images,” “show me the ideas first,” or an equivalent instruction.
-- When the user provides a source image and says “try this,” select the highest-scoring direction and generate one image by default. If the user specifies a quantity, follow it unless they explicitly request concepts only.
+- When the user provides a source image and says “try this,” select the highest-scoring direction and generate one image by default when the host supports it; otherwise deliver the selected direction and its production-ready prompt. If the user specifies a quantity, follow it unless they explicitly request concepts only.
+
+## Host Capability Routing
+
+- Treat the host’s advertised tools and enabled integrations as the source of truth. Never infer image-generation support from the model name alone.
+- If a suitable image-generation tool is available, use it after concept screening and prompt construction. If the host exposes separate generation and editing tools, choose according to whether the task needs a new image or a localized edit.
+- If the user supplies an image but the host cannot pass that image to an editing tool, preserve the edit plan and locked elements in a precise prompt rather than claiming the source image was edited.
+- If no image tool is available, complete all ideation, scoring, physical engineering, and prompt-writing steps, then deliver prompt-only output with a one-line capability note.
+- Host-specific metadata outside `SKILL.md` is optional and must not be required for the core workflow.
 
 ## Understanding Iterative Feedback
 
@@ -198,7 +207,7 @@ Before generation, write one untitled blind-read sentence that explicitly includ
 
 ### 6. Write the Generation Prompt
 
-Unless the user explicitly asks for concepts only, read `references/prompt-patterns.md` after selecting the final concepts and generate a corresponding image for each one. Read the same file for localized edits. The prompt must explicitly specify:
+Unless the user explicitly asks for concepts only, read `references/prompt-patterns.md` after selecting the final concepts. Generate a corresponding image for each concept when the host provides a suitable tool; otherwise deliver the prompt for use in an external image generator. Read the same file for localized edits. The prompt must explicitly specify:
 
 - Scene.
 - Subject and sole anomaly.
@@ -212,7 +221,7 @@ Do not use words such as “dreamlike,” “magical,” “cinematic,” or “
 
 ### 7. Inspect the Actual Output
 
-Inspect every generated image before delivery:
+When an image was actually generated or edited, inspect it before delivery:
 
 - Can both objects be recognized within one second?
 - Are tool orientation, hand gesture, and contact angle correct?
@@ -224,11 +233,11 @@ Inspect every generated image before delivery:
 
 Perform another blind read of the actual output. If the description does not naturally mention the target function or core action, the required visual evidence was not generated. Allow only one localized correction aimed at the missing evidence; never use a title or explanation to make the image pass.
 
-Make only one precise edit for a localized error. If the core logic is wrong, one correction introduces another break, or the image demands increasingly elaborate explanation, immediately pass on that execution and switch to a new concept.
+Make only one precise edit for a localized error. If the core logic is wrong, one correction introduces another break, or the image demands increasingly elaborate explanation, immediately pass on that execution and switch to a new concept. In prompt-only mode, do not pretend that this output inspection occurred.
 
 ### 8. Deliver Concisely
 
-By default, begin with a short concept name and one sentence explaining the relationship, then show the corresponding image immediately. Use one or two sentences to explain what the object is, what it becomes, and why the relationship works. Do not defend an unreadable image with a long explanation.
+By default, begin with a short concept name and one sentence explaining the relationship, then show the corresponding image immediately when one was generated. In prompt-only mode, provide the production-ready prompt in its place and state that the current host did not generate an image. Use one or two sentences to explain what the object is, what it becomes, and why the relationship works. Do not defend an unreadable image with a long explanation.
 
 Only when the user explicitly requests concepts without images, present text-only directions as “Concept One / Concept Two.” For each, include only one sentence describing the image, why it works, and its key physical structure. End with one sentence stating how the mechanisms differ.
 

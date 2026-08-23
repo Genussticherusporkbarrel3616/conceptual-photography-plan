@@ -2,11 +2,29 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-`conceptual-photography-plan` is a Codex Skill for creating original conceptual photography. Starting from a word, a specific object, a reference image, or a theme, it expands possible concepts, filters out forced or physically implausible ideas, and generates a corresponding photorealistic image by default.
+`conceptual-photography-plan` is a cross-platform Agent Skill for creating original conceptual photography. Starting from a word, a specific object, a source image, or a theme, it expands possible concepts and filters out forced or physically implausible ideas. It generates the corresponding photorealistic image when the host provides an image tool; otherwise it delivers a production-ready prompt.
 
 Rather than simply combining two similarly shaped objects, it looks for a genuinely meaningful new relationship: the object remains recognizable, its original function or action still works, and every connection, load-bearing structure, path, light source, and scene detail withstands scrutiny.
 
 > **In one sentence:** Keep the surrealism within the crucial 10% of the relationship, while the other 90% remains grounded in reality.
+
+## Triggering
+
+After the Skill is installed and enabled, it can be triggered explicitly or by a matching natural-language request:
+
+- **Codex:** `Use $conceptual-photography-plan to create two concepts from a banana.`
+- **Claude Code:** `/conceptual-photography-plan Create two concepts from a banana.`
+- **Claude, Coze, and other compatible hosts:** Ask naturally, for example, `Use conceptual-photography-plan with this source image and select the strongest direction.`
+- **Semantic triggering:** Requests involving a specified element, conceptual-photography theme, source-image reinterpretation, precise image correction, or feedback such as “next” and “pass” can load the Skill automatically when the host supports skill discovery.
+
+## Workflow
+
+1. **Understand the input:** Identify the requested element, theme, source image, quantity, and output constraints.
+2. **Route source images:** Classify each image as an object anchor, scene base, edit target, or pure style reference.
+3. **Expand and screen concepts:** Generate candidates, apply the six hard gates, and reject weak or physically incomplete mechanisms.
+4. **Engineer the visual evidence:** Define attachment points, load bearing, material behavior, action path, lighting, and the visible before–contact–after sequence.
+5. **Generate or fall back:** Use the host’s available image tool for separate full-bleed 3:4 outputs; when no image tool exists, provide separate production-ready prompts and state that no image was generated.
+6. **Inspect and deliver:** Blind-read the actual output, allow at most one precise correction to missing evidence, and present each selected concept concisely.
 
 ## Example Works
 
@@ -57,7 +75,7 @@ These examples use displaced actions, functional substitution, and scale shifts,
 - **Scene transformation:** Preserve roughly 80%–90% of the original space, people, perspective, and lighting while changing only one crucial relationship.
 - **Logic review:** Check connection points, load bearing, hinges, tool orientation, liquid paths, opening mechanisms, shadows, and cause-and-effect.
 - **Continuous iteration:** Understand short feedback such as “next,” “continue,” “pass,” or “keep the person and change only the prop,” while locking all untouched elements.
-- **Direct image generation:** Deliver the selected concept and its image together by default, without requiring a separate request to generate it.
+- **Capability-aware image generation:** Deliver the selected concept and its image together when the host provides an image tool; otherwise deliver a production-ready prompt without fabricating a result.
 
 ## Core Method
 
@@ -95,6 +113,17 @@ Original object → contact or connection → visible result
 If the image depends on a title to make sense, or can only be described as “an object placed somewhere,” the composition does not proceed to generation.
 
 ## Installation
+
+### Universal ZIP: Claude, Coze, and Agent Skills Hosts
+
+[Download `conceptual-photography-plan-universal.zip`](dist/conceptual-photography-plan-universal.zip)
+
+The universal package contains only the standard `SKILL.md` entrypoint and its three required reference files. Its ZIP root is the correctly named `conceptual-photography-plan/` folder.
+
+- **Claude:** Upload the ZIP from **Customize → Skills**, or extract the folder to `~/.claude/skills/` for Claude Code.
+- **Coze:** Upload the same ZIP with **Upload skill package**; Coze can inspect and repackage the standard structure.
+- **Other compatible hosts:** Import or extract the top-level skill folder according to the host's Agent Skills instructions.
+- **Image capability fallback:** The Skill generates images when the host provides an image-generation tool. Otherwise it delivers screened concepts and production-ready prompts without claiming that an image was created.
 
 ### Option 1: Ask Codex to Install It (Recommended)
 
@@ -188,9 +217,9 @@ Use $conceptual-photography-plan to create two new concepts based on a rose. Sho
 
 ## Default Output
 
-- When one element is provided without a quantity, the default output is **2 distinct concepts + 2 corresponding images**.
-- When a reference image is uploaded with a request such as “try this,” the default output is **1 strongest direction + 1 image**.
-- When a quantity is specified, each concept receives its own image; a collage is never used as a substitute for separate outputs.
+- When one element is provided without a quantity, the default output is **2 distinct concepts + 2 corresponding images**, or 2 separate production-ready prompts when the host has no image tool.
+- When a source image is uploaded with a request such as “try this,” the default output is **1 strongest direction + 1 image**, or its precise generation/edit prompt when image execution is unavailable.
+- When a quantity is specified, each concept receives its own image or prompt; a collage is never used as a substitute for separate outputs.
 - Default format: vertical **3:4**, full-bleed, with no white border or rounded corners.
 - Default style: photorealistic photography; action-based concepts favor real-life settings and natural light.
 - Each image contains only one anomalous relationship, with no explanatory text, arrows, labels, or magical effects.

@@ -1,81 +1,81 @@
-# 历史校准案例
+# Historical Calibration Cases
 
-仅在继续既有系列、判断新方向是否达到历史水平、或总结失败时读取。案例用于理解机制，不得直接复刻。
+Read this file only when continuing an existing series, judging whether a new direction reaches the established quality level, or learning from prior failures. Use the cases to understand mechanisms; never reproduce them directly.
 
-## 历史已用账本
+## Used-Ideas Ledger
 
-除非用户明确要求返修，以下物件配对和近似换皮默认禁止再次作为“新创意”。生成候选前把本表与当前对话的新方案合并。
+Unless the user explicitly requests a revision, do not present the following pairings or near-reskins as new concepts. Before generating candidates, merge this ledger with the new concepts already used in the current conversation.
 
-### 参考图禁用配对
+### Pairings Excluded from Reference Images
 
-- 耳朵与砖墙、蛋托裙或鞋、胡萝卜卷发、生肉流苏裙、煎蛋裙、插头发圈、蘑菇耳塞。
+- Ear and brick wall, egg-carton skirt or shoe, carrot curls, raw-meat fringe dress, fried-egg skirt, plug hair tie, and mushroom earplug.
 
-### 动作型已用或封存
+### Used or Retired Action-Based Concepts
 
-- 卷笔刀削蜡烛、橡皮擦吐司、开瓶钻抽苹果芯、梳子梳意面。
-- 圆规画树木年轮、针线缝季节叶片、纽扣开合花瓣。
-- 微型钥匙开核桃、安全剃刀刮石头苔藓、熨斗压平立体地图。
-- 罐头开启机构、红绿灯与局部雨地、外贴微型雨刷等已测试方向。
-- 窗边猫与“阳光地毯”、葫芦茶壶通过滴管给茶杯输茶已完成测试；除返修外不得作为新方向换皮复用。
+- Pencil sharpener sharpening a candle, eraser removing burnt toast, corkscrew extracting an apple core, comb combing pasta.
+- Compass drawing tree rings, needle and thread sewing seasonal leaves, button opening and closing petals.
+- Miniature key opening a walnut, safety razor shaving moss from a stone, iron flattening a raised-relief map.
+- Can-opening mechanisms, traffic light with localized rain-soaked ground, externally mounted miniature wiper, and related tested directions.
+- Window-side cat with a “sunlight rug,” and a gourd teapot feeding tea through a dropper into a cup. These were fully tested; do not reuse them as reskins except for an explicit revision.
 
-### 穿戴型已用或封存
+### Used or Retired Wearable Concepts
 
-- 小票服装、干燥剂披风、清洁手套光环或领饰、洋蓟肩甲。
-- 气泡快递袋羽绒服、青口贝美甲、安全带马甲、百叶窗升降裙。
-- 卷尺裙、磁带马尾、折扇袖、弹簧袖、折尺立领、纸灯笼袖。
-- 拉链辫、柔性键盘上衣、浴帘裙、油漆刷刘海、订书机鞋。
-- 卷帘披风、铅笔屑卷发、羽毛球层叠裙。
-- 胶片褶裙、黑胶唱片帽檐、充气包装袖、扑克牌裙腰。
+- Receipt garment, desiccant cape, cleaning-glove halo or collar, artichoke shoulder armor.
+- Bubble-mailer puffer jacket, mussel-shell nails, seat-belt vest, Venetian-blind lifting skirt.
+- Measuring-tape skirt, cassette-tape ponytail, folding-fan sleeve, spring sleeve, folding-ruler standing collar, paper-lantern sleeve.
+- Zipper braid, flexible-keyboard top, shower-curtain skirt, paintbrush bangs, stapler shoe.
+- Roller-blind cape, pencil-shaving curls, shuttlecock tiered skirt.
+- Film-strip pleated skirt, vinyl-record hat brim, inflatable-packaging sleeve, playing-card waistband.
 
-若候选只把以上方案换成相似材料，例如“另一种弹簧做袖子”或“另一种帘子做裙子”，仍视为重复。
+A candidate is still a duplicate if it merely replaces one of these concepts with a similar material, such as “another kind of spring as a sleeve” or “another kind of blind as a skirt.”
 
-## 已验证的成功机制
+## Validated Successful Mechanisms
 
-### 动作错置
+### Displaced Action
 
-- 卷笔刀削蜡烛并露出灯芯：工具动作真实，削除结果与刀口路径一致。
-- 橡皮擦去吐司焦层：未擦焦层、接触点、干净面和碎屑同框。
-- 开瓶钻抽出苹果芯：螺旋钻进入果芯；抽出部分必须保留顶部红皮和果梗。
-- 高级梳子梳顺番茄奶油蘑菇意面：齿距、酱汁和被梳顺区域形成清楚前后差异。
-- 圆规为树桩增加年轮：针脚固定、铅笔端沿同心圆轨迹工作。
-- 钥匙打开带微型锁与铰链的核桃：锁、开缝、铰链和果仁构成闭环。
-- 安全剃刀刮去石头苔藓：刀头前后具有等宽未刮与已刮区域。
-- 熨斗压平纸质立体地图：山脊、接触线和平整等高线连续。
+- A pencil sharpener sharpens a candle and exposes the wick: the tool action is real, and the removed result matches the blade path.
+- An eraser removes the burnt layer from toast: untouched char, contact point, clean surface, and crumbs appear in one frame.
+- A corkscrew extracts an apple core: the spiral enters the core, and the extracted section must retain red skin and the stem at its top.
+- A premium comb straightens tomato-cream mushroom pasta: tooth spacing, sauce, and the combed region create a clear before-and-after difference.
+- A compass adds growth rings to a tree stump: the needle stays fixed while the pencil end follows a concentric path.
+- A key opens a walnut fitted with a miniature lock and hinge: lock, opening seam, hinge, and kernel form a closed mechanism.
+- A safety razor removes moss from a stone: equal-width unshaved and shaved areas appear before and after the razor head.
+- An iron flattens a paper relief map: raised ridges, contact line, and flattened contour lines remain continuous.
 
-### 功能替身
+### Functional Substitute
 
-- 银色气泡快递袋羽绒服：完整袋体仍可辨，空气夹层的保护功能与羽绒服同构。
-- 百叶窗升降裙：顶部轨道、叶片、梯绳和拉绳完整保留，原升降动作就是裙摆动作。
-- 磁带马尾：一条连续磁带从左卷盘经底部导轮抽出形成马尾，再回到右卷盘。
-- 浴帘裙：弧形轨道贴合腰线，挂环承载整张帘布，滑动即开合裙摆。
-- 羽毛球层叠裙：真实面料负责贴腰和覆盖，完整羽毛球从层缝伸出并扩大喇叭轮廓。
-- 铅笔屑卷发：每片完整螺旋木屑对应一缕卷发，微观物件清楚、宏观发型成立。
-- 阳光地毯：原房间、窗口、木地板和猫保持不变；只有地面光斑获得透出木纹的织纹与短流苏。概念成立依赖“光仍是光”和“地毯语法可见”同时出现。
-- 葫芦茶壶给茶杯输茶：保留双球陶瓷轮廓、壶盖与束环，用可见金属托环承重，液体沿底部出口—透明管—滴壶—茶杯连续流动。成功来自储液与重力输出的真实功能同构，而不是葫芦外形相似。
+- Silver bubble-mailer puffer jacket: the complete mailer remains recognizable, and its protective air pockets are functionally homologous with a puffer jacket.
+- Venetian-blind lifting skirt: top rail, slats, ladder cords, and pull cord remain complete; the blind’s original lifting action becomes the skirt’s movement.
+- Cassette-tape ponytail: one continuous tape leaves the left reel, passes around a lower guide, forms the ponytail, and returns to the right reel.
+- Shower-curtain skirt: a curved track follows the waist, rings carry the entire curtain, and sliding the rings opens and closes the skirt.
+- Shuttlecock tiered skirt: real fabric fits and covers the waist, while complete shuttlecocks emerge from layered seams to expand the bell silhouette.
+- Pencil-shaving curls: each complete spiral shaving corresponds to one curl, keeping the object clear at the micro level and the hairstyle coherent at the macro level.
+- Sunlight rug: the original room, window, wooden floor, and cat remain unchanged; only the light patch gains a woven texture that still reveals the wood grain and a short fringe. The concept works only when “light remains light” and “rug grammar is visible” at the same time.
+- Gourd teapot feeding a teacup: retain the double-bulb ceramic silhouette, lid, and retaining ring; use a visible metal support ring for load bearing; and keep the liquid path continuous from bottom outlet to transparent tube, drip pot, and cup. The success comes from a real functional match in liquid storage and gravity-fed output, not from shape similarity.
 
-## 失败及其新增规则
+## Failures and the Rules They Added
 
-- 小票潮汐：加工过度时像碎纸；强化票面后又变成信息堆积。结论：识别与整体美感必须同时成立。
-- 干燥剂云：叙事装置强于直接替换。结论：不要让概念依赖警示文字。
-- 清洁手套光环或领饰：卡通对称、亮色和简单挂置。结论：识别快不等于美观，也不等于承担功能。
-- 洋蓟肩甲：只是蔬菜摆在肩上。结论：外形相似弱于真实动作和结构。
-- 安全带马甲：保留零件却破坏三点式整体语法。结论：保留标志性系统，不只保留材料。
-- 柔性键盘上衣：没有天然领口、袖孔与闭合。结论：能弯曲不等于能成衣。
-- 油漆刷发型：改成刘海后结构合理，但手柄和金属箍破坏面部美感。结论：非核心部件不得压过人体轮廓。
-- 订书机鞋：结构对应但像夹脚。结论：危险与压迫感可以否决机械正确。
-- 卷帘披风：只是挂在背上。结论：完整物件仍须顺应身体并承担服装结构。
-- 拉链辫：附着感大于发型本身。结论：不能靠贴上去制造替代。
-- 罐头开启、花瓣扣袢等多轮修正：生成模型持续破坏真实机械路径。结论：一次精准修正仍失败就换表现方式。
-- 不合理场景、假光、假雨、窗口与光束不等宽：结论是环境物理与主体机械同等重要。
-- 阳光地毯初图只有普通光斑，标题里有“地毯”但画面里没有。结论：提示词存在不等于视觉证据存在；盲读缺少目标功能时只允许补一次关键语法。
-- 葫芦茶壶素材中的吊牌被错误当成身份特征保留，之后又被局部删除。结论：素材图应区分核心身份、辅助结构和可移除附件；不要机械复制每个可见部件。
+- Receipt tide: when processed too heavily it resembled shredded paper; when receipt details were strengthened it became information clutter. **Rule:** recognizability and overall beauty must succeed together.
+- Desiccant cloud: the narrative installation overpowered the direct substitution. **Rule:** do not let the concept depend on warning text.
+- Cleaning-glove halo or collar: cartoon symmetry, bright color, and simple hanging. **Rule:** fast recognition does not guarantee beauty or functional responsibility.
+- Artichoke shoulder armor: merely a vegetable placed on a shoulder. **Rule:** shape similarity is weaker than real action and structure.
+- Seat-belt vest: preserved parts but destroyed the complete three-point grammar. **Rule:** preserve the signature system, not only the material.
+- Flexible-keyboard top: lacked a natural neckline, armholes, and closure. **Rule:** the ability to bend does not make an object wearable.
+- Paintbrush hairstyle: the bangs became structurally plausible, but the handle and metal ferrule damaged facial beauty. **Rule:** non-core parts must not overpower the body silhouette.
+- Stapler shoe: structurally analogous but looked as if it would clamp the foot. **Rule:** danger and oppressive discomfort can reject a mechanically correct concept.
+- Roller-blind cape: merely hung on the back. **Rule:** a complete object must still conform to the body and perform a garment structure.
+- Zipper braid: felt attached rather than becoming the hairstyle. **Rule:** substitution cannot be manufactured by sticking an object onto the target.
+- Repeated corrections to can-opening and petal-loop mechanisms: the image model kept breaking the real mechanical path. **Rule:** switch execution after one precise correction still fails.
+- Implausible setting, fake light, fake rain, or a window whose width does not match the beam. **Rule:** environmental physics matters as much as the subject mechanism.
+- The first sunlight-rug image showed only an ordinary light patch; “rug” existed in the title but not the image. **Rule:** a prompt does not equal visual evidence; when the blind read lacks the target function, allow only one correction to add its key grammar.
+- A hangtag on the gourd-teapot source image was incorrectly preserved as an identity feature and later removed locally. **Rule:** divide source-image information into core identity, supporting structure, and removable accessories; do not copy every visible component mechanically.
 
-## 用户反馈语义
+## User Feedback Semantics
 
-- “看不懂”：先判定物件身份、动作因果或整体语法哪一项丢失；不要用长说明补救。
-- “合理但不好看”：直接触发美感否决，不能继续以结构正确辩护。
-- “创意点可以，表现不合理”：保留抽象机制，重做道具结构或场景；不要守着原图微调。
-- “在第一张基础上”：锁定第一张的构图、光线与形态，只改点名问题。
-- “场景真实一点”“光太假”：删除舞台光、雾和解释性环境，重建唯一可信光源。
-- “下一个”：切换到新机制，不继续解释被拒绝方案。
-- “直接给多个”：独立生成多个方向，并主动拉开动作、材料、身体部位和场景。
+- “I don’t understand it”: determine whether object identity, action causality, or overall grammar is missing; do not compensate with a long explanation.
+- “It makes sense but doesn’t look good”: trigger an aesthetic rejection immediately; do not continue defending structural correctness.
+- “The idea works, but the execution is implausible”: retain the abstract mechanism and rebuild the prop or setting; do not keep micro-adjusting the same image.
+- “Based on the first image”: lock the first image’s composition, lighting, and form; change only the named problem.
+- “Make the scene more realistic” or “the light looks fake”: remove stage lighting, fog, and explanatory environment; rebuild one credible light source.
+- “Next”: switch to a new mechanism; do not keep explaining the rejected concept.
+- “Give me several directly”: generate independent directions and deliberately separate their actions, materials, body areas, and settings.
