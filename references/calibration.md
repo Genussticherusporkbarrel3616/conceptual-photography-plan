@@ -26,10 +26,43 @@ Unless the user explicitly requests a revision, do not present the following pai
 - Zipper braid, flexible-keyboard top, shower-curtain skirt, paintbrush bangs, stapler shoe.
 - Roller-blind cape, pencil-shaving curls, shuttlecock tiered skirt.
 - Film-strip pleated skirt, vinyl-record hat brim, inflatable-packaging sleeve, playing-card waistband.
+- Binder-clip bow tie, soap cuff, perfume-atomizer pendant, compass belt buckle, camera-lens monocle, desk-lamp earring, and door-security-chain collar.
+- Powder-compact wristwatch, rubber-stamp heel, melting-ice ring, spirit-level tie clip, coffee-bean buttons, powder-puff earmuffs, and related mature-series tests.
 
 A candidate is still a duplicate if it merely replaces one of these concepts with a similar material, such as “another kind of spring as a sleeve” or “another kind of blind as a skirt.”
 
 ## Validated Successful Mechanisms
+
+### Cross-Case Rules Confirmed by Testing
+
+- The discovery formula is **familiar object × native action or material behavior × exact position × minimal alteration**. The best idea feels like a natural visual coincidence that was noticed and photographed, not a prop engineered backward from a concept title.
+- Every successful frame follows the same causal chain: **original object identity → real connection or action → visible functional result**. Strong styling cannot rescue a missing link.
+- Wearable concepts may attach an object to the body or fabric only when that attachment carries load, fits, tensions, guides, moves, opens, closes, or otherwise enables the substituted function. Attachment used only for placement is decoration.
+- Mechanical simplification works when redundant parts are removed while the minimum recognizable structure and every evidence-bearing part remain.
+- Any visible rail, slider or chain head, hinge, ring, clasp, or fastener must actively bear, guide, move, lock, or transfer force. Hardware with no operational role is dead hardware and should be removed.
+- The most convincing outputs keep real skin and material micro-imperfections, natural incomplete asymmetry, motivated light, restrained depth of field and grading, and credible contact shadows. Plastic skin, CG highlights, beige “premium” wash, floating contact, regular copies, and unmotivated cinematic light reveal the generation instead of the idea.
+- Test the appropriate evidence type: displaced actions need before/contact/direction/result; shaped roles need two readable identities plus credible arrangement, contact, support, body position, and silhouette; shape-plus-association concepts add meaning through the same object’s native property; functional substitutes claiming operation need the original action and a visible output.
+- Cutting or repeating an object is acceptable when the pieces retain minimum identity cues and together form clear target grammar. One dominant relationship does not require one physical unit.
+
+### Mature-Series Selection Conclusion
+
+- After hard-gate rejection, rank by **fun 70%, emotion or meaning 20%, visual impact 10%**. Fun is the instant pleasure of noticing an unexpected yet apt relation; it is not enlargement, spectacle, specialist hardware, technical explanation, or novelty for its own sake.
+- One-glance readability, originality distance, physical or role logic, photographic beauty, and shootability remain hard gates. They do not disappear merely because they are not preference weights.
+- Prefer familiar, normally scaled objects, exact body or object placement, and very little alteration. Reject specialist connectors, oversized fabricated props, forced costume exercises, literal technical product demonstrations, and relationships that exist only in the title.
+
+### Mature Positive and Borderline Cases
+
+- **Powder-compact wristwatch:** a strong everyday-life visual wit case. The compact stays recognizable while the exact wrist position and opening grammar create the watch role with little alteration.
+- **Rubber-stamp heel:** a strong action case because contact produces a visible stamped result. The print, not the title, proves why the object is a heel.
+- **Melting-ice ring:** the strongest late-stage case. Ice identity, ring role, melting result, and emotional meaning all arise from one object and one native material behavior.
+- **Spirit-level tie clip:** borderline because miniaturization and cropping can erase the source identity. Keep the vial, frame, and level grammar legible or reject it.
+- **Coffee-bean buttons:** a useful lower bound. The visual role is readable and minimally altered, but the relation needs especially strong placement, material beauty, or a second native association to rise above generic substitution.
+
+### Recent Batch Calibration
+
+- An overall-positive batch—binder-clip bow tie, soap cuff, perfume-atomizer pendant, compass belt buckle, and camera-lens monocle—confirmed that functional attachment can succeed: the source remains independently recognizable, the support visibly carries it, and its original action produces a visible result such as clamping, lather, mist, direction, or magnification.
+- The desk-lamp earring was selected for simplification because the shade, opening, and cheek-facing light already proved the idea. Remove redundant bases or articulated arms before removing the minimum identity cues or the aligned patch of light.
+- The door-security-chain collar failed despite a plausible theme: the chain was merely hooked around a ring while the slide track did no work. A real chain-end stud must enter the enlarged keyhole opening and slide into the narrow track; otherwise the track is dead hardware and the mechanism is false.
 
 ### Displaced Action
 
@@ -64,18 +97,26 @@ A candidate is still a duplicate if it merely replaces one of these concepts wit
 - Paintbrush hairstyle: the bangs became structurally plausible, but the handle and metal ferrule damaged facial beauty. **Rule:** non-core parts must not overpower the body silhouette.
 - Stapler shoe: structurally analogous but looked as if it would clamp the foot. **Rule:** danger and oppressive discomfort can reject a mechanically correct concept.
 - Roller-blind cape: merely hung on the back. **Rule:** a complete object must still conform to the body and perform a garment structure.
-- Zipper braid: felt attached rather than becoming the hairstyle. **Rule:** substitution cannot be manufactured by sticking an object onto the target.
+- Zipper braid: felt attached rather than becoming the hairstyle. **Rule:** attachment is valid only when it performs a load-bearing, fitting, guiding, moving, opening, closing, or tensioning job; placement alone cannot create substitution.
 - Repeated corrections to can-opening and petal-loop mechanisms: the image model kept breaking the real mechanical path. **Rule:** switch execution after one precise correction still fails.
 - Implausible setting, fake light, fake rain, or a window whose width does not match the beam. **Rule:** environmental physics matters as much as the subject mechanism.
 - The first sunlight-rug image showed only an ordinary light patch; “rug” existed in the title but not the image. **Rule:** a prompt does not equal visual evidence; when the blind read lacks the target function, allow only one correction to add its key grammar.
 - A hangtag on the gourd-teapot source image was incorrectly preserved as an identity feature and later removed locally. **Rule:** divide source-image information into core identity, supporting structure, and removable accessories; do not copy every visible component mechanically.
+- Technical cable and connector batches often looked engineered rather than discovered. **Rule:** inspect every connector and visible hardware path; reject specialist complexity when a simpler familiar object can carry the idea.
+- Generic prop substitutions such as pot-lid hats were readable but offered no natural coincidence or native action. **Rule:** immediate recognition is a gate, not the definition of fun.
+- A cheese-hole-punch style demonstration showed an action but no discovery. **Rule:** a literal technical demo is not automatically a concept merely because the mechanism works.
+- Powder-puff earmuffs and miniaturized spirit-level treatments let the target role swallow the original object. **Rule:** preserve enough source identity for the viewer to name both sides in one second.
+- Wet spaghetti, pinching mechanisms, and medical-looking hardware created aesthetic threat or disgust. **Rule:** beauty and bodily comfort can reject a logically coherent structure.
+- A specified two-image banana request drifted into an unrelated correction-tape image and wrong format. **Rule:** before delivery, compare the actual files with the required anchor noun, count, distinctness, subject, aspect ratio, and provenance; dimensions alone are not visual QA.
 
 ## User Feedback Semantics
 
 - “I don’t understand it”: determine whether object identity, action causality, or overall grammar is missing; do not compensate with a long explanation.
+- “I understand it, but it is not interesting”: reject literal demonstration, forced matching, and over-engineering; search for a more natural coincidence instead of polishing the same relation.
 - “It makes sense but doesn’t look good”: trigger an aesthetic rejection immediately; do not continue defending structural correctness.
 - “The idea works, but the execution is implausible”: retain the abstract mechanism and rebuild the prop or setting; do not keep micro-adjusting the same image.
 - “Based on the first image”: lock the first image’s composition, lighting, and form; change only the named problem.
 - “Make the scene more realistic” or “the light looks fake”: remove stage lighting, fog, and explanatory environment; rebuild one credible light source.
 - “Next”: switch to a new mechanism; do not keep explaining the rejected concept.
 - “Give me several directly”: generate independent directions and deliberately separate their actions, materials, body areas, and settings.
+- Assistant approval is provisional. Record a case as user-accepted only after explicit user approval; a technically complete render is not evidence of acceptance.

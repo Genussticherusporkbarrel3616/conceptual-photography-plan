@@ -4,7 +4,7 @@
 
 `conceptual-photography-plan` is a cross-platform Agent Skill for creating original conceptual photography. Starting from a word, a specific object, a source image, or a theme, it expands possible concepts and filters out forced or physically implausible ideas. It generates the corresponding photorealistic image when the host provides an image tool; otherwise it delivers a production-ready prompt.
 
-Rather than simply combining two similarly shaped objects, it looks for a genuinely meaningful new relationship: the object remains recognizable, its original function or action still works, and every connection, load-bearing structure, path, light source, and scene detail withstands scrutiny.
+It looks for a relationship that feels discovered rather than engineered: **familiar object × native action or material behavior × exact position × minimal alteration**. Every successful frame preserves **original object identity → real connection or action → visible functional result**.
 
 > **In one sentence:** Keep the surrealism within the crucial 10% of the relationship, while the other 90% remains grounded in reality.
 
@@ -21,10 +21,10 @@ After the Skill is installed and enabled, it can be triggered explicitly or by a
 
 1. **Understand the input:** Identify the requested element, theme, source image, quantity, and output constraints.
 2. **Route source images:** Classify each image as an object anchor, scene base, edit target, or pure style reference.
-3. **Expand and screen concepts:** Generate candidates, apply the six hard gates, and reject weak or physically incomplete mechanisms.
+3. **Expand and screen concepts:** Generate candidates, apply the six hard gates, then rank survivors by fun 70%, emotion or meaning 20%, and visual impact 10%.
 4. **Engineer the visual evidence:** Define attachment points, load bearing, material behavior, action path, lighting, and the visible before–contact–after sequence.
 5. **Generate or fall back:** Use the host’s available image tool for separate full-bleed 3:4 outputs; when no image tool exists, provide separate production-ready prompts and state that no image was generated.
-6. **Inspect and deliver:** Blind-read the actual output, allow at most one precise correction to missing evidence, and present each selected concept concisely.
+6. **Inspect and deliver:** Blind-read the actual output, audit skin, materials, asymmetry, light, contact shadows, lens behavior, and grading for AI traces, allow at most one precise correction, and present each selected concept concisely.
 
 ## Example Works
 
@@ -79,28 +79,27 @@ These examples use displaced actions, functional substitution, and scale shifts,
 
 ## Core Method
 
-### 1. Start with a Shared Verb
+### 1. Start with the Native Fit
 
 Every concept needs at least:
 
 ```text
-Original object + unexpected target + a real action shared by both
+Familiar object × native action or material behavior × exact position × minimal alteration
 ```
 
-For example, a lawn mower and an eyebrow share “trimming”; a windshield wiper and tears share “wiping away”; a corkscrew and an apple share “twisting in and lifting out.” Combinations based only on similar color, silhouette, or scale—without a shared action—are rejected first.
+For example, a lawn mower and an eyebrow share “trimming”; a windshield wiper and tears share “wiping away”; melting ice can form a ring while its native material change supplies the meaning. Generic color or silhouette matching is rejected first.
 
 ### 2. Reject First, Then Score
 
-Every candidate must pass six hard gates: object recognition, action completeness, a natural functional connection, physical closure, photographic beauty, and originality. A broken critical structure cannot be rescued by a high concept score.
+Every candidate must pass six hard gates: object recognition, action or role completeness, a natural connection, physical or role closure, photographic beauty, and originality. A broken critical structure cannot be rescued by a high preference score.
 
 Candidates that pass are ranked using these weights:
 
-- Conceptual freshness: 40%
+- Fun: 70%
 - Emotion or meaning: 20%
 - Visual impact: 10%
-- Immediate readability: 10%
-- Originality distance: 10%
-- Practical shootability: 10%
+
+Immediate readability, originality distance, physical or role logic, beauty, and practical shootability remain hard gates outside the weights.
 
 ### 3. Turn the Concept into Single-Frame Evidence
 

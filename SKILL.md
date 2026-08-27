@@ -9,10 +9,15 @@ description: Create, screen, and validate original conceptual photography from a
 
 Create conceptual photography that can be explained in one sentence, remains understandable when the explanation is hidden, and could be physically built in the real world. Let the surrealism exist in only one relationship; keep every other person, environment, material, light source, and mechanical structure realistic.
 
+Prefer a relation that feels discovered rather than engineered: **familiar object × native action or material behavior × exact position × minimal alteration**. Find a natural visual coincidence first, then decide how to photograph it; do not begin with spectacle and force an object to perform the concept.
+
+Use this as the non-negotiable success chain: **original object identity → real connection or action → visible functional result**. Strong styling cannot rescue a missing link.
+
 ## Default Delivery Constraints
 
 - Use a vertical 3:4, full-bleed frame with no white border or rounded corners; override these defaults when the user specifies otherwise.
 - Use photorealistic photographic language. Favor real-life settings and natural light for action-based concepts; favor clean studio photography or a credible everyday environment for wearable concepts.
+- Remove the AI-generated look in both prompting and output review: preserve real skin texture and material micro-imperfections, natural incomplete asymmetry, credible contact shadows, restrained depth of field and grading, and one motivated primary light. Reject plastic skin, CG highlights, excessive beige “premium” styling, floating contact, regular cloned repetition, fake blur, and unmotivated cinematic light.
 - Keep only one anomalous relationship in each image. Do not add explanatory text, arrows, labels, magical light effects, or a second metaphor.
 - Any person shown must be clearly adult, naturally attractive, and non-sexualized. The person supports the concept and must not overpower the subject.
 - By default, every invocation delivers a screened concept description and, when the host has an image-generation capability, its corresponding generated image. Do not require a separate request to generate the image.
@@ -35,7 +40,9 @@ Create conceptual photography that can be explained in one sentence, remains und
 - “Next,” “another one,” or “continue with the next one”: immediately switch to a new concept and generate its image through the default workflow. Change the source object, target function, and core action; do not disguise a minor revision of the previous concept as a new one.
 - “Continue”: if the previous concept has not yet been generated or is being revised from feedback, finish it; otherwise, move to the next concept.
 - “Pass”: retire that element and any nearby variants that depend on the same weak connection for the remainder of the current run.
+- “I understand it, but it is not interesting”: reject literal demonstration, forced matching, and over-engineering. Search for a more natural coincidence instead of polishing the same relationship.
 - “Okay,” “nice,” or “great”: record why the concept succeeded, not just the object name. Carry the strength of the mechanism into the next image without copying its surface form.
+- Treat assistant approval as provisional. Only explicit user approval establishes acceptance for historical calibration.
 - Treat short, localized feedback as an edit to the currently selected asset. Lock every unmentioned aspect of composition, people, materials, lighting, and scale; prefer editing the clean, unannotated original image.
 - When the user provides a crop, index number, or percentage coordinate, treat it only as location information. Find the corresponding complete, unannotated image and use it as the edit base. Remove the complete semantic component together with its attachment points, shadows, and residue, then reconstruct the original material continuously.
 - When the user asks for multiple concepts, give each one a genuinely different mechanism and image. Do not use colorways or prop swaps of the same concept.
@@ -44,7 +51,7 @@ Create conceptual photography that can be explained in one sentence, remains und
 
 Recognize requests such as “create two new concepts from X,” “element: X, give me two directions,” or “make conceptual photography with X.” Treat X as the shared, irreplaceable anchor element in both concepts.
 
-First establish the anchor element’s real structure, materials, characteristic components, original function, and possible actions. Then develop at least eight internal candidates. Prefer a displaced-action concept for one direction and a functional-substitute concept for the other. If the element does not support both modes, use two completely different targets and verbs.
+First establish the anchor element’s real structure, materials, characteristic components, original function, native behavior, and possible actions. Then develop at least eight internal candidates. Prefer different evidence models—for example, one displaced action and one shaped role or functional substitute. If the element does not support different models, use two completely different targets and verbs.
 
 Select the final pair using these pairing gates:
 
@@ -67,20 +74,20 @@ Determine the role in this order:
 3. For every other image—including images casually called a “reference” or introduced with “use this as a reference”—first attempt object-anchor extraction. If a qualifying element exists, treat the image as an object-anchor image.
 4. Treat the image as a pure style reference only when the entire image contains no qualifying object anchor.
 
-An object-anchor candidate must satisfy all of the following: it can be named independently; most of its functional structure is visible and not severely cropped or occluded; it has at least two stable identity features; its real use, action, or material behavior can be inferred; and creating a new relationship does not require shattering, melting, or reducing it to color and silhouette. If several candidates qualify, choose the one with the most complete structure, clearest function, and strongest visual presence. Ask only when candidates are equally important and would lead to completely different outcomes.
+An object-anchor candidate must be independently nameable, show most of its recognizable structure, retain at least two stable identity features, and reveal a usable real function, action, material behavior, structure, or association. If several candidates qualify, choose the one with the clearest identity and strongest potential for a new relationship. Ask only when candidates are equally important and would lead to completely different outcomes.
 
 Conclude that there is “no suitable element” and fall back to a pure style reference only when every object is partial, blurry, generically decorative, recognizable only through the original composition, or useful only for color, lighting, texture, and atmosphere. Record the reason for the fallback, but do not expose the internal routing process unless the user asks.
 
 ### Object-Anchor Image
 
-- Divide the image information into three layers: `core identity` (primary silhouette, material, structural grammar, and original function), `supporting features` (lid, handle, opening, retaining ring, and so on), and `removable accessories` (hangtags, loose straps, packaging, temporary labels, text, watermarks, and capture artifacts). Preserve the core identity and any supporting features required by the concept. Do not inherit accessories by default unless the user names them or they genuinely determine the object’s identity.
-- Extract the main object’s scale, openings, axes, repeated units, connection points, input–storage–transformation–output chain, executable actions, and emotional associations. Ignore irrelevant backgrounds and low-resolution compression artifacts.
+- Divide the image information into three layers: `core identity` (primary silhouette, material, structural grammar, and native behavior), `supporting features` (lid, handle, opening, retaining ring, and so on), and `removable accessories` (hangtags, loose straps, packaging, temporary labels, text, watermarks, and capture artifacts). Preserve the core identity and any supporting features required by the concept. Do not inherit accessories by default unless the user names them or they genuinely determine the object’s identity.
+- Extract the main object’s scale, openings, axes, repeated units, connection points, executable actions, material behaviors, and emotional associations. Add its input–storage–transformation–output chain when real operation is claimed. Ignore irrelevant backgrounds and low-resolution compression artifacts.
 - Treat the main object as the user-specified, irreplaceable element, and apply the candidate expansion and pairing audit from the specified-element two-concept mode.
-- Preserve at least two unmistakable visual anchors in each concept, along with the complete functional system that allows the original object to work. Here, “complete structure” means the parts and connections required for recognition and real function, not hangtags, packaging, or temporary accessories.
-- The new relationship must allow the original object to continue performing a real function, or transfer the same functional chain to an unexpected target. Do not turn a functional object into static decoration by borrowing only its shape, color, or material.
-- If a candidate requires the object to be crushed, melted, disassembled into generic parts, or stripped of its original function, reject that candidate and inspect other objects in the image. Do not downgrade the entire image to a style reference for this reason alone.
+- Preserve at least two unmistakable visual anchors in each concept. Preserve the complete functional system only when the selected evidence model claims real operation; “complete structure” does not include hangtags, packaging, or temporary accessories.
+- The new relationship must use the original object’s real function, native action, material behavior, structure, or clear target-role grammar. Do not reduce it to unidentifiable generic shape, color, or material.
+- Cutting, repetition, or native material change is allowed when the remaining units retain minimum identity cues and collectively form clear target grammar. Reject a candidate that must destroy every identity cue or reduce the object to generic parts.
 - When generating a new image, use the source image only as a reference for anchor identity and material. Explicitly forbid copying its background, people, lighting, and composition unless the user asks to preserve them.
-- Prefer matches based on real function, action, or material movement. Reject any candidate based only on visual similarity without a shared verb.
+- Prefer matches based on real function, action, material behavior, structure, or exact placement. Reject candidates based only on generic shape or color similarity.
 
 ### Pure Style Reference
 
@@ -97,7 +104,7 @@ Conclude that there is “no suitable element” and fall back to a pure style r
 
 For every image role, state before generation what must be preserved, what may change, and what must not be copied. After generation, check both fidelity to the source anchor and instant readability of the new relationship.
 
-## Selecting a Concept Mode
+## Selecting an Evidence Model
 
 ### A. Displaced Action
 
@@ -108,25 +115,35 @@ Have a tool perform its normal action on an unexpected target. The image must sh
 3. The tool’s direction of travel or applied force.
 4. A visible result that matches the tool’s width and path.
 
-This mode suits actions with clear causality, such as sharpening, wiping, combing, scraping, ironing, opening, measuring, rolling, pulling, or drawing.
+This model suits actions with clear causality, such as sharpening, wiping, combing, scraping, ironing, opening, measuring, rolling, pulling, or drawing.
 
-### B. Functional Substitute
+### B. Shaped Role
+
+Let a familiar everyday object enter a clear clothing, hair, beauty, body, or object-role grammar at normal scale with minimal alteration. Preserve both identities and prove the target through credible arrangement, contact, support, body position, and silhouette. Do not invent hidden industrial mechanics for a purely visual role.
+
+Attachment is allowed only when it bears, fits, tensions, guides, moves, opens, closes, or otherwise enables the role. Placement-only attachment is decoration and fails. Real fabric may fit, cover, or support, but it must not hide the conceptual object.
+
+### C. Shape Plus Association
+
+First make the shaped role readable, then add a second meaning through the same object’s native property—such as melting, scent, tears, reflection, light, or wear. Do not add a second prop or metaphor to explain it.
+
+### D. Functional Substitute
 
 Have a complete everyday object take over a real function of clothing, hair, beauty tools, or a body part. Use this priority order:
 
 Same operating action > same structural method > same material movement > similar shape > similar color.
 
-The object may work together with real fabric, but the division of labor must be explicit: the fabric fits, covers, or connects, while the object provides the conceptual silhouette or its original action. Do not merely attach an object to clothing or the body.
+If the concept claims operation, preserve the original action and show its visible physical output on the target. The object may work together with real fabric, but the division of labor must be explicit: the fabric fits, covers, or connects, while the object provides the conceptual silhouette or its original action.
 
-### C. Hybrid Mode
+### E. Hybrid Mode
 
-Combine action and functional substitution only when both share the same causal chain. If the concept requires two sentences to explain, return to Mode A or B.
+Combine models only when they share the same causal chain. If the concept requires two sentences to explain, return to one model.
 
 ## Workflow
 
 ### 1. Route the Reference Image Before Abstracting It
 
-First use Source-Image-Driven Mode to determine whether a qualifying object anchor exists. If it does, define the complete functional structure, input–action–output chain, and identity features that must be preserved before establishing a new target and relationship. Add the original background, people, specific pairing, and composition to a temporary do-not-use list. Extract pure style information—such as color, lighting, material grain, depth of field, and photographic character—only when anchor extraction fails.
+First use Source-Image-Driven Mode to determine whether a qualifying object anchor exists. If it does, define the identity features and native action or material behavior that must remain, then choose displaced action, shaped role, shape plus association, or functional substitute as the evidence model. Require the complete functional structure and input–action–output chain only when real operation is claimed. Add the original background, people, specific pairing, and composition to a temporary do-not-use list. Extract pure style information—such as color, lighting, material grain, depth of field, and photographic character—only when anchor extraction fails.
 
 When continuing an existing series, build a “used-ideas ledger” from the current conversation and `references/calibration.md`. Record at least the source object, target, verb, and silhouette. If a candidate repeats a pairing from the ledger or is merely a near-reskin, assign it an originality-distance score of 0 and do not generate it. Unlock an old direction only when the user explicitly asks to revisit it.
 
@@ -144,12 +161,12 @@ The specified-element two-concept mode is the exception: the source object is fi
 Write exactly eight items for each candidate:
 
 - Source object and the core identity anchors that must be preserved.
-- Original functional chain: input, storage, transformation, output, movement, or fixation.
-- Function or target being replaced.
+- Native action or material behavior; if operation is claimed, add the original input–storage–transformation–output chain.
+- Function, role, or target being adopted.
 - Verb shared by both sides.
 - One-sentence image description.
-- Real-world construction and load-bearing method.
-- The “before–contact–after” evidence in a single frame.
+- Real-world contact, support, or load-bearing method.
+- Evidence required by the selected model.
 - Greatest failure risk.
 
 In specified-element two-concept mode, also state which characteristic features of the anchor element are preserved so it cannot collapse into a generic material.
@@ -161,30 +178,29 @@ Reject any candidate that cannot be explained in one sentence.
 Apply the logical hard gates first. Score each of these six criteria from 1 to 5:
 
 - Object recognizability.
-- Completeness of the substitution or action.
-- Natural functional connection.
-- Physical and mechanical closure.
+- Completeness of the action or role.
+- Natural connection.
+- Physical or role closure.
 - Photographic beauty.
 - Originality distance from the reference and recent concepts.
 
-Do not generate a candidate if any criterion scores below 4, or if the total is below 25/30. A concept that works logically but looks unattractive still fails. Reject immediately if load bearing, connections, liquid paths, opening/closing behavior, or blind readability do not close; a high total score cannot compensate for these failures.
+Do not generate a candidate if any criterion scores below 4, or if the total is below 25/30. A concept that works logically but looks unattractive still fails. Reject immediately if load bearing, connections, liquid paths, opening/closing behavior, role grammar, or blind readability do not close; a high total score cannot compensate for these failures.
 
-Rank only the candidates that pass every hard gate, using these weights:
+Rank only candidates that pass every hard gate:
 
-- Conceptual freshness: 40%.
-- Visual impact: 10%.
-- Emotion or meaning: 20%.
-- Instant readability: 10%.
-- Originality distance: 10%.
-- Practical shootability: 10%.
+- **Fun 70%:** the viewer instantly discovers an unexpected yet apt relation. Enlargement, spectacle, novelty, or technical complexity alone do not count.
+- **Emotion or meaning 20%:** the discovery leaves a second feeling or thought without requiring a caption.
+- **Visual impact 10%:** the frame has a strong and attractive silhouette and focus without decorative exaggeration.
 
-Use the weights to select the best candidates, not to rescue structural failures. Do not expose the internal scoring process unless the user asks.
+One-glance readability, originality distance, physical or role logic, photographic beauty, and practical shootability remain hard gates outside the weights. Use the weights to select the best survivors, never to rescue a structural failure. Do not expose the internal scoring process unless the user asks.
 
 A two-concept pair must also pass the pairing audit: the targets and core actions must differ, and the concepts must show at least three visible differences beyond the shared anchor. Two individually strong candidates that are near-neighbor variants cannot be delivered as a pair.
 
 Read `references/logic-audit.md` before scoring. When continuing an existing series, when the user says “next” or “continue,” or when historical successes and failures must inform the choice, also read `references/calibration.md` and merge it with the current conversation’s used-ideas ledger.
 
-### 4. Engineer the Prop
+### 4. Engineer the Evidence
+
+Choose the evidence model before engineering the prop. Apply the full mechanical checklist to displaced actions and functional substitutes. For shaped roles, prove identity, contact, support, gravity, body position, arrangement, and silhouette without inventing hidden mechanics. For shape-plus-association, also make the native material result visible and causal.
 
 Before writing the prompt, establish:
 
@@ -197,7 +213,9 @@ Before writing the prompt, establish:
 - Why these objects belong in the scene.
 - Where the light originates, and whether aperture size and projected shadow agree.
 
-If the continuous path cannot be drawn, do not generate the image.
+Remove mechanical clutter, but retain the minimum recognizable structure and every evidence-bearing part. Every visible rail, slider or chain head, hinge, ring, clasp, or fastener must bear, guide, move, lock, or transfer force. Remove dead hardware that performs no work.
+
+If a claimed continuous path cannot be drawn, do not generate the image. Cutting and repetition remain valid when the pieces preserve minimum identity cues and collectively form unmistakable target grammar; one dominant relationship does not require one physical unit.
 
 ### 5. Design Single-Frame Evidence
 
@@ -211,8 +229,9 @@ Unless the user explicitly asks for concepts only, read `references/prompt-patte
 
 - Scene.
 - Subject and sole anomaly.
-- Physical path.
-- Unchanged area, contact, and result.
+- Selected evidence model.
+- Physical path when operation is claimed.
+- Identity, contact, support, action, or result evidence.
 - Locked elements.
 - Lighting and camera.
 - Quantity, proportions, and exclusions.
@@ -228,12 +247,18 @@ When an image was actually generated or edited, inspect it before delivery:
 - Are connection points, paths, quantities, and structures continuous?
 - Does the result strictly match the tool’s path?
 - Are anatomy, gravity, shadows, reflections, and perspective consistent?
+- Do skin and materials retain credible micro-variation?
+- Is repeated structure naturally irregular rather than mechanically cloned?
+- Do contact and compression shadows prove weight and prevent floating?
+- Are depth of field, highlights, grading, and the primary light optically credible and restrained?
 - Are the actual pixel dimensions 3:4, full-bleed, and borderless?
 - Is the image beautiful, rather than merely technically complete?
 
-Perform another blind read of the actual output. If the description does not naturally mention the target function or core action, the required visual evidence was not generated. Allow only one localized correction aimed at the missing evidence; never use a title or explanation to make the image pass.
+Perform another blind read of the actual output. If the description does not naturally mention the target function, role, or core action, the required visual evidence was not generated. Allow only one localized correction aimed at the missing evidence; never use a title or explanation to make the image pass.
 
 Make only one precise edit for a localized error. If the core logic is wrong, one correction introduces another break, or the image demands increasingly elaborate explanation, immediately pass on that execution and switch to a new concept. In prompt-only mode, do not pretend that this output inspection occurred.
+
+Before delivery, compare the actual files with the request: required anchor noun, asset count, genuine concept distinctness, actual subject, aspect ratio, full-bleed framing, dimensions, and file provenance. Pixel dimensions are artifact checks, not proof of visual success or user acceptance.
 
 ### 8. Deliver Concisely
 
@@ -245,7 +270,7 @@ Only when the user explicitly requests concepts without images, present text-onl
 
 - Keep 90% grounded in reality and change only the crucial 10% relationship.
 - Use the one-second test for recognition and the three-second test for surprise.
-- The original function must still work, or the action must follow the real tool’s operating principle.
+- Real actions must work and leave visible results; shaped roles must visibly form the target grammar.
 - Preserve recognizability at the micro level while completing the transformation at the macro level.
-- Beauty is a hard gate, not a bonus awarded after mechanical correctness.
+- Mechanical closure and beauty are hard gates, not bonuses awarded after conceptual cleverness.
 - Originality comes from new relationships and causality, not from more elaborate art direction.
